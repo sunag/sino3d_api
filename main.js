@@ -94,5 +94,8 @@ document.body.onkeydown = ( e ) => {
 	else if ( key == 6 ) sino3d.setCarVersion( 'Master Minibus Executive L3H2' );
 	else if ( key == 'i' ) goToInterior();
 	else if ( key == 'e' ) goToExterior();
+	else if ( key == 'a' ) sino3d.setAmbient( 'chassi.jpg' );
+	else if ( key == 'b' ) sino3d.setAmbient( 'minibus-vitre.jpg' );
+	else if ( key == 'd' ) sino3d.setAmbient(); // default
 
 }
