@@ -9,6 +9,24 @@ sino3d.addEventListener('progress', ( e ) => {
 	
 });
 
+// carregando interior
+sino3d.addEventListener('insideProgress', ( e ) => {
+
+	const percent = parseInt( e.value * 100 );
+
+	console.log( 'INSIDE PROGRESS', percent );
+	
+});
+
+// hotspot
+sino3d.addEventListener('hotspot', ( e ) => {
+
+	const id = e.id;
+
+	console.log( 'HOTSPOT ID:', id );
+	
+});
+
 // showroom carregado
 sino3d.addEventListener('complete', () => {
 
@@ -26,6 +44,11 @@ sino3d.addEventListener('complete', () => {
 	console.log( 'DONE!' );
 
 });
+
+// troca de ghost ( nome da versão do carro )
+// deixar vazio o argumento da função sumir o ghost
+sino3d.setGhost( /*'Master Furgão L1H1'*/ );
+sino3d.setGhost(); // invisivel
 
 const goToExterior = () => {
 	
