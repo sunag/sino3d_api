@@ -45,11 +45,6 @@ sino3d.addEventListener('complete', () => {
 
 });
 
-// troca de ghost ( nome da versão do carro )
-// deixar vazio o argumento da função sumir o ghost
-sino3d.setGhost( /*'Master Furgão L1H1'*/ );
-sino3d.setGhost(); // invisivel
-
 const goToExterior = () => {
 	
 	// fade para efeito de transição
@@ -115,10 +110,16 @@ document.body.onkeydown = ( e ) => {
 	else if ( key == 4 ) sino3d.setCarVersion( 'Master Extra Vitré L3H2' );
 	else if ( key == 5 ) sino3d.setCarVersion( 'Master Chassi Cabine L2H1' );
 	else if ( key == 6 ) sino3d.setCarVersion( 'Master Minibus Executive L3H2' );
+	
 	else if ( key == 'i' ) goToInterior();
 	else if ( key == 'e' ) goToExterior();
+	
 	else if ( key == 'a' ) sino3d.setAmbient( 'chassi.jpg' );
 	else if ( key == 'b' ) sino3d.setAmbient( 'minibus-vitre.jpg' );
 	else if ( key == 'd' ) sino3d.setAmbient(); // default
+	
+	else if ( key == 8 ) sino3d.setGhost( 'Master Furgão L1H1');
+	else if ( key == 9 ) sino3d.setGhost( 'Master Chassi Cabine L2H1' );
+	else if ( key == 0 ) sino3d.setGhost(); // default
 
 }
