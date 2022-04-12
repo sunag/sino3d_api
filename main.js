@@ -118,6 +118,8 @@ document.body.onkeydown = ( e ) => {
 	else if ( key == 'b' ) sino3d.setAmbient( 'minibus-vitre.jpg' );
 	else if ( key == 'd' ) sino3d.setAmbient(); // default
 	
+	else if ( key == 'h' ) sino3d.hotspots = !sino3d.hotspots; // default
+	
 	else if ( key == 8 ) sino3d.setGhost( 'Master Furgão L1H1');
 	else if ( key == 9 ) sino3d.setGhost( 'Master Grand Furgão L2H2' );
 	else if ( key == 0 ) sino3d.setGhost(); // default
