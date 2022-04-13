@@ -120,6 +120,9 @@ document.body.onkeydown = ( e ) => {
 	
 	else if ( key == 'h' ) sino3d.hotspots = !sino3d.hotspots;
 	
+	else if ( key == '-' ) sino3d.setScale( 1, .5 );
+	else if ( key == '+' ) sino3d.setScale( 1, 1 );
+	
 	else if ( key == 8 ) sino3d.setGhost( 'Master Furgão L1H1');
 	else if ( key == 9 ) sino3d.setGhost( 'Master Grand Furgão L2H2' );
 	else if ( key == 0 ) sino3d.setGhost(); // default
